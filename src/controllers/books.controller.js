@@ -32,6 +32,13 @@ export const getBookById = async (req, res) => {
   res.status(200).json(book);
 };
 
+export const getBookBytitle = async (req, res) => {
+  const { title } = req.body;
+  console.log(req.body);
+  const book = await Book.find({ title: title });
+  res.status(200).json(book);
+};
+
 export const getBooks = async (req, res) => {
   const books = await Book.find();
   return res.json(books);
