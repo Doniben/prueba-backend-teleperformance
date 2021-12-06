@@ -53,7 +53,7 @@ function BusquedaLibros() {
         console.log(error);
       }
 
-      const url_Ext = "http://openlibrary.org/search.json?q=";
+      const url_Ext = "https://openlibrary.org/search.json?q=";
       const uri_Ext = url_Ext + texto;
 
       console.log(texto);
